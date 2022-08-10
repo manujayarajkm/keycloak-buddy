@@ -1,7 +1,7 @@
 {
-  "name": "keycloak",
+  "name": "keycloak-buddy",
   "version": "1.0.0",
-  "description": "assistive package for keycloak APIs",
+  "description": "Assistive package for keycloak APIs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
