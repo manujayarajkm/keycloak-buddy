@@ -30,15 +30,15 @@ const getToken=async()=>{
         }
         const config={
             method:'POST',
-            url:`${KEYCLOAK_DOMAIN}/auth/realms/${REALM_NAME}/protocol/openid-connect/token`,
+            url:`${KEYCLOAK_DOMAIN}/realms/${REALM_NAME}/protocol/openid-connect/token`,
             headers:{
                 'Content-Type':'application/x-www-form-urlencoded'
             },
             data:querystring.stringify(urlParams)
         }
         const tokenResponse= await processRequest(config);
-        console.log('tokenResponse ',tokenResponse);
-        return tokenResponse.access_token;
+        // console.log('tokenResponse ',tokenResponse);
+        return tokenResponse;
     } catch (error) {
         console.error('Error in getting Admin token ',error);
         throw new Error('Error in fetching Admin token');
