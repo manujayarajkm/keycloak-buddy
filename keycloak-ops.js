@@ -16,7 +16,6 @@ const getUsers=async()=>{
                 }
             }
             userData=await processRequest(config);
-            console.log('userData ',userData)
             return userData
         }
         return userData;
