@@ -1,6 +1,6 @@
 {
   "name": "keycloak-buddy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper for keycloak admin APIs",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -12,6 +12,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Manu Jayaraj",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manujayarajkm/keycloak-buddy.git"
+  },
   "license": "ISC",
   "dependencies": {
     "axios": "^1.11.0"
@@ -21,5 +25,12 @@
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
-  }
+  },
+  "keywords": [
+    "keycloak",
+    "admin",
+    "api",
+    "helper",
+    "tool"
+  ]
 }
