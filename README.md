@@ -35,12 +35,14 @@ npm install keycloak-buddy
 import { KeycloakAdmin } from "keycloak-buddy";
 
 const keycloakAdmin = new KeycloakAdmin({
-  baseUrl: "https://keycloak.example.com",
+  baseUrl: "https://keycloak.example.com/auth",
   realm: "master",
   clientId: "admin-cli",
   username: "admin",
   password: "yourpassword",
 });
+
+* Do not forget to include the '/auth' part at the end of baseUrl
 
 await keycloakAdmin.init();
 const users = await keycloakAdmin.getUsers();

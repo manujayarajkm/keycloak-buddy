@@ -1,9 +1,9 @@
 {
   "name": "keycloak-buddy",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Helper for keycloak admin APIs",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
     "clean": "rimraf dist",
