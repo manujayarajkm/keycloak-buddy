@@ -1,19 +1,25 @@
 {
   "name": "keycloak-buddy",
-  "version": "1.0.0",
-  "description": "Assistive package for keycloak APIs",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Helper for keycloak admin APIs",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "build": "rimraf dist && tsc",
+    "clean": "rimraf dist",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Manu Jayaraj",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.23.0",
-    "dotenv": "^10.0.0"
+    "axios": "^1.11.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "@types/node": "^24.3.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
